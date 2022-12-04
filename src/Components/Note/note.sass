@@ -1,0 +1,106 @@
+.notes-wrapper
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  transform: rotate(1deg) 
+  padding-top: 60px
+.show-all-tbn
+  margin-bottom: 20px
+
+.note-wrapper
+  width: 285px
+  height: 200px
+  padding: 25px 15px 25px 30px
+  margin: 0 10px 10px 0
+  position: relative
+  border-radius: 8px
+  background-color: #b5b85d
+  background-size: 100%
+  font-size: 1.5rem
+  font-family: 'Areal', cursive
+  line-height: 1.5rem
+  transition: 0.3s linear
+  
+  
+  &:hover
+    box-shadow: 0 0 20px black
+  &:hover .tools-wrapper
+    opacity: 1
+  @media only screen and (max-width: 425px)
+    width: 90%
+
+.note-wrapper:nth-child(even) 
+  transform:rotate(1deg)
+  position:relative
+  top:5px
+  
+.note-wrapper:nth-child(3n) 
+  transform:rotate(-1deg)
+  position:relative
+  top:-15px
+
+.note-wrapper:nth-child(4n) 
+  transform:rotate(9deg)
+  position:relative
+  top:-10px
+
+
+
+.note
+  height: 85%
+
+
+
+
+.note-content
+  height: 93%
+  padding-right: 5px
+  padding-top: 25px
+  cursor: text
+  
+     
+
+.tools-wrapper
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  width: auto
+  height: 40px
+  top: 10px
+  right: 15px
+  
+  cursor: pointer
+  & span
+    height: 30px
+    transition: 0.1s linear
+    &:hover
+      opacity: 0.7
+
+
+ 
+
+.remove
+ margin-right: 10px
+ color: #fff
+
+.tag
+  color: #0004ff
+
+.bottom-tag
+  margin-right: 8px
+  color: #0004ff
+  cursor: pointer
+
+.tags-wrapper
+  width: 83%
+  position: absolute
+  bottom: 15px
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+
+
+
+
+
